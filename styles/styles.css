@@ -1,0 +1,107 @@
+:root {
+    --bg-main: #000000;
+    --green-main: #008000;
+    --white-: white;
+    --font-title: 26px;
+    --padding-small: 10px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+    --font-buttons: 25px;
+    --font-footer: 15px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+.destaque-green {
+    color: var(--green-main);
+}
+
+.color-white {
+    color: var(--white-);
+}
+
+.reset-style-link {
+    text-decoration: none;
+    color: var(--white-);
+}
+
+.header-main {
+    font-size: var(--font-title);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-large);
+    flex-wrap: wrap;
+}
+
+.header-main>p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.effect-hover-link-suap {
+    transition: 0.3s ease-in-out;
+}
+
+.effect-hover-link-suap:hover {
+    color: var(--green-main);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--padding-large);
+    height: 690px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+    align-items: center;
+    padding: var(--padding-large);
+}
+
+.buttons {
+    display: flex;
+    font-size: var(--font-buttons);
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    box-shadow: #00d600 2px 2px 4px 2px;
+    background-color: var(--green-main);
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover {
+    background-color: var(--white-);
+    color: var(--green-main);
+    border: 2px solid var(--green-main);
+}
+
+.footer-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--padding-small);
+    padding: var(--padding-large);
+    background-color: var(--green-main);
+    color: var(--white-);
+    font-size: var(--font-footer);
+    font-weight: bold;
+    height: 150px;
+}
