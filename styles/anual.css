@@ -1,0 +1,150 @@
+:root {
+    --bg-main: #000000;
+    --green-main: #008000;
+    --white-: white;
+    --font-title: 26px;
+    --padding-small: 10px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+    --font-buttons: 25px;
+    --font-footer: 15px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+.destaque-green {
+    color: var(--green-main);
+}
+
+.color-white {
+    color: var(--white-);
+}
+
+.reset-style-link {
+    text-decoration: none;
+    color: var(--white-);
+}
+
+.header-main {
+    font-size: var(--font-title);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-large);
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--padding-large);
+    height: 690px;
+}
+
+.form-anual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--padding-large);
+    padding: var(--padding-large);
+    background-color: var(--green-main);
+    color: var(--white-);
+    font-size: var(--font-title);
+    font-weight: bold;
+    height: 690px;
+    width: 30%;
+    border-radius: 9px
+}
+
+.input {
+    width: 70%;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #707070;
+    color: var(--white-);
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid var(--green-main);
+}
+
+.input::placeholder {
+    color: var(--white-);
+}
+
+.input:hover {
+    border: 1px solid var(--white-);
+}
+
+.input-submit {
+    width: 70%;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: var(--white-);
+    color: var(--green-main);
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-submit:hover {
+    background-color: #707070;
+    color: var(--white-);
+    border: 1px solid var(--white-);
+}
+
+.footer-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--padding-small);
+    padding: var(--padding-large);
+    background-color: var(--green-main);
+    color: var(--white-);
+    font-size: var(--font-footer);
+    font-weight: bold;
+    height: 150px;
+}
+
+.result-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        height: 100%;
+    }
+
+    .form-anual {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input-submit {
+        width: 100%;
+    }
+
+
+}
