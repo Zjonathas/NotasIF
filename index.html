@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>IFWEBCALC</title>
 </head>
 
 <body>
 
     <header class="header-main bg-main">
-        <h1 class="color-white">
+        <h1 class="color-white h1-header">
             <span class="destaque-green">IF</span>WEB<span class="destaque-green">CALC</span>
         </h1>
 
-        <p>
+        <p class="h1-header">
             <a href="https://suap.ifrn.edu.br/accounts/login/?next=/"
                 class="reset-style-link effect-hover-link-suap">SUAP</a>
         </p>
@@ -50,6 +51,26 @@
             <p><a href="https://github.com/Zjonathas/NotasIF"></a>Código do projeto</p>
         </div>
     </footer>
+
+    <script>
+        ScrollReveal().reveal('.h1-header', {
+            delay: 100,
+            origin: 'top',
+            distance: '50px'
+        });
+
+        ScrollReveal().reveal('.buttons-container', {
+            delay: 100,
+            origin: 'bottom',
+            distance: '50px'
+        });
+
+        ScrollReveal().reveal('.conatiner-footer-data', {
+            delay: 100,
+            origin: 'bottom',
+            distance: '50px'
+        });
+    </script>
 
 </body>
 
